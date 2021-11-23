@@ -1,0 +1,42 @@
+body {
+  background: #C8C8A9;
+  text-align: center;
+}
+
+svg {
+  margin: 50px auto;
+  width: 45%;
+}
+
+.logo {
+  fill: #FE4365;
+}
+
+.clip {
+  -webkit-animation: slide 8s infinite;
+          animation: slide 8s infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    transform: translateY(-135px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(-135px);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-135px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(-135px);
+  }
+}

@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('sample', function () {
+    return view('sample.jscss');
+});
+
+
+Route::get('text', 'TextController@register')->name('text');
+
+Route::post('store', 'TextController@exeStore')->name('store');
+
+
