@@ -49773,7 +49773,36 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    todos: [] //←TODO を格納するための配列を用意
+
+  },
+  methods: {
+    fetchTodos: function fetchTodos() {
+      var _this = this;
+
+      //←axios.get で TODO リストを取得しています
+      axios.get('/api/get').then(function (res) {
+        _this.todos = res.data; //← 取得した TODO リストを todos に格納
+      });
+    },
+    addTodo: function addTodo() {
+      var _this2 = this;
+
+      //← 追記
+      axios.post('/api/add', {
+        title: this.new_todo
+      }).then(function (res) {
+        _this2.todos = res.data;
+        _this2.new_todo = '';
+      });
+    }
+  },
+  created: function created() {
+    //← インスタンス生成時に fetchTodos()を実行したいので、created フックに登録します。
+    this.fetchTodos();
+  }
 });
 
 /***/ }),

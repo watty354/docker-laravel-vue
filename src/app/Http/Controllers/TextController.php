@@ -20,6 +20,21 @@ class TextController extends Controller
 
 
 /**
+ * 一覧
+ * 
+ */
+public function show() {
+$texts = text::all();
+
+
+
+return view('sample.show',['texts' => $texts]);
+
+
+}
+
+
+/**
  * 
  * @return view
  */
@@ -29,7 +44,6 @@ public function exeStore(TextRequest $request) {
     $inputs = $request->all();
     text::create($inputs);
 
-    \Session::flash('err_msg', 'touroku');
     return view('sample.text');
 }
 
