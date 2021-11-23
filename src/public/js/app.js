@@ -49775,8 +49775,9 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app',
   data: {
-    todos: [] //←TODO を格納するための配列を用意
-
+    todos: [],
+    //←TODO を格納するための配列を用意
+    message: 'Hello World!!'
   },
   methods: {
     fetchTodos: function fetchTodos() {

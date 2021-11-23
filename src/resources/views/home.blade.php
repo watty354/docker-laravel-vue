@@ -9,5 +9,11 @@
 <body>
     <a href="{{ url('/about') }}">説明</a>
     <a href="{{ url('/input') }}">入力</a>
+	<div id="app">
+		@{{ message }}
+        <a href="/@{{ message }}">sannpuru</a>
+	</div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

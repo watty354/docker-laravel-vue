@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTestTable extends Migration
+class CreateTextTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateTestTable extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('text')) {   
-        Schema::create('test', function (Blueprint $table) {
+        Schema::create('text', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('text');
             $table->string('name');
             $table->timestamps();
         });
-    }
     }
 
     /**
@@ -30,6 +28,6 @@ class CreateTestTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test');
+        Schema::dropIfExists('text');
     }
 }

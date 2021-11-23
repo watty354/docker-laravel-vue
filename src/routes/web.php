@@ -10,11 +10,29 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use Illuminate\Support\Facades\URL;
 //本物HOME
 Route::get('/', function () {  
-    return view('home');
+    // return view('home');
+
+
+    $url = URL::temporarySignedRoute('unsubscribe', 
+    now()->addSeconds(5), 
+    ['user' => 1]);
+
+// とりあえずwelcomページにリンクを出して見る
+return view('home')->with('url',$url);
   });
+
+  Route::get('/unsubscribe/{user}', function (Request $request) {
+
+    return view('safe');
+
+})->name('unsubscribe')->middleware('signed');
+
+
+
+
   //説明
   Route::get('/about', function () {  
     return view('about');
@@ -33,7 +51,8 @@ Route::get('/', function () {
   
   Route::get('/check', "TextController@confirm")->name("form.confirm");
   Route::post('/check', "TextController@send")->name("form.send");
-  
+
+
   Route::get('/fake.success', "TextController@complete")->name("form.complete");
 
 

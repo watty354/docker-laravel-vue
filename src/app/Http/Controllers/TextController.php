@@ -63,6 +63,7 @@ public function detail($id) {
 
 private $formItems = ["name", "text"];
 
+
 private $validator = [
     "name" => "required|string|max:100",
     "text" => "required|string|max:100",
@@ -113,6 +114,7 @@ function send(Request $request){
     //セッションから値を取り出す
     $input = $request->session()->get("form_input");
 
+
     //戻るボタンが押された時
     if($request->has("back")){
         return redirect()->action("TextController@show")
@@ -125,15 +127,23 @@ function send(Request $request){
     }
 
     //ここでメールを送信するなどを行う
-    text::create($input);
+    $data = text::create($input);
 
-    //セッションを空にする
-    $request->session()->forget("form_input");
+    $id = $data->id;
 
-    return redirect()->action("TextController@complete");
-}
+    // //セッションを空にする
+    // $request->session()->forget("form_input");
 
-function complete(){	
-    return view("fake.success");
-}
+    return view("fake.success", compact('id'));
+    }
+
+
+// function complete(Request $request){	
+//     $input = $request->session()->get("form_input");
+
+  
+
+
+//     return view("fake.success",["input" => $input]);
+// }
 }

@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class text extends Model
 {
     //テーブル名
-    protected $table = 'test';
+    protected $table = 'text';
     protected $fillable =
     [
-        'text'
+        'text',
+        'name'
     ];
 }
 

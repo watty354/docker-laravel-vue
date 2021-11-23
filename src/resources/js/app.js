@@ -9,7 +9,8 @@ const app = new Vue({
 
 
     data: {
-        todos: [] //←TODO を格納するための配列を用意
+        todos: [], //←TODO を格納するための配列を用意
+        message: 'Hello World!!'
     },
     methods: {
         fetchTodos: function() { //←axios.get で TODO リストを取得しています
