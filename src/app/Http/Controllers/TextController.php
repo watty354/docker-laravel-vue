@@ -26,8 +26,6 @@ class TextController extends Controller
 public function show() {
 $texts = text::all();
 
-
-
 return view('sample.show',['texts' => $texts]);
 
 
@@ -45,6 +43,17 @@ public function exeStore(TextRequest $request) {
     text::create($inputs);
 
     return view('sample.text');
+}
+/**
+ * @param int $id
+ * @return view
+ */
+
+public function detail($id) {
+    
+    $text = text::find($id);
+
+    return view('sample.home',['text' => $text]);
 }
 
 }

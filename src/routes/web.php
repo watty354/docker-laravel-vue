@@ -11,13 +11,15 @@
 |
 */
 
-Route::get('/{app}', function () {  //←追記
+Route::get('/', function () {  //←追記
     return view('welcome');
-  })->where('app', '.*');//どんなURｌでもここの戻す
+  });
 
 Route::get('sample', function () {
     return view('sample.jscss');
 });
+
+Route::get('/home/{id}', 'TextController@detail') -> name('home');
 
 
 Route::get('show', 'TextController@show')->name('showw');
