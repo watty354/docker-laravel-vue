@@ -54,7 +54,21 @@ public function detail($id) {
     
     $text = text::find($id);
 
-    return view('sample.home',['text' => $text]);
+    
+
+    return view('fake.home',['text' => $text]);
+}
+/**
+ * @param int $id
+ * @return view
+ */
+public function detailText($id) {
+    
+    $text = text::find($id);
+
+    
+
+    return view('fake.result',['text' => $text]);
 }
 
 
@@ -137,13 +151,4 @@ function send(Request $request){
     return view("fake.success", compact('id'));
     }
 
-
-// function complete(Request $request){	
-//     $input = $request->session()->get("form_input");
-
-  
-
-
-//     return view("fake.success",["input" => $input]);
-// }
 }

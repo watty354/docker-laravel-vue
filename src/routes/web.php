@@ -53,63 +53,27 @@ return view('home')->with('url',$url);
   Route::post('/check', "TextController@send")->name("form.send");
 
 
-  Route::get('/fake.success', "TextController@complete")->name("form.complete");
+ 
 
 
 
+  Route::get('/fake.home/{id}', 'TextController@detail');
 
-
-
-
-
-
-
-
-//   //入力画面
-//   Route::get('/input', function () {  
-//     return view('input');
-//   });
-//   //入力画面をセット
-//   Route::post('/input', 'TextController@setValue')->name('set');
   
-
-// //チェック
-// Route::get('/check','TextController@check')->name('check');
-
-// Route::post('/check', 'TextController@register')->name('user.resister_resister');
-
-
-// //成功
-// Route::get('/fake.success', function () {  
-//   return view('fake.success');
-// });
-
-// //成功
-// Route::get('/fake.home', function () {  
-//   return view('fake.home');
-// });
-// //成功
-// Route::get('/fake.game', function () {  
-//   return view('fake.game');
-// });
-
-// //成功
-// Route::get('/fake.result', function () {  
-//   return view('fake.result');
-// });
+  Route::get('/fake.game/{id}', 'TextController@detailText');
 
 
 
 
 
-Route::get('/sample', function () {
-    return view('sample.jscss');
-});
-
-Route::get('/home/{id}', 'TextController@detail') -> name('home');
 
 
-Route::get('show', 'TextController@show')->name('showw');
+
+
+
+// Route::get('/home/{id}', 'TextController@detail') -> name('home');
+
+
 
 
 Route::get('text', 'TextController@register')->name('text');
