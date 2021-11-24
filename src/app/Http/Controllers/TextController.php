@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\text;
+use App\Models\Personality;
 use Illuminate\Http\Request;
 use App\Http\Requests\TextRequest;
 use Validator;
@@ -75,7 +76,7 @@ public function detailText($id) {
 // ======================================================================================================================
 
 
-private $formItems = ["name", "text"];
+private $formItems = ["name", "text", "sentence_id"];
 
 
 private $validator = [
@@ -120,7 +121,11 @@ function confirm(Request $request){
         return redirect()->action("TextController@show");
     }
 
-    return view("check",["input" => $input]);
+    $id = $input['sentence_id'];
+
+    $sentence = Personality::find($id);
+
+    return view("check",["input" => $input,"sentence" =>$sentence]);
 }
 
 function send(Request $request){

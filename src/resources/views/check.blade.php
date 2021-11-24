@@ -34,6 +34,12 @@
 	</div>
 
 
+	<label>Name</label>
+	<div>
+		{{ $sentence -> sentence }}
+	</div>
+
+
 
 	<label>Text</label>
 	<div>

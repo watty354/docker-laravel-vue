@@ -47,6 +47,13 @@
 		<input type="text" name="name" value="{{ old('name') }}" />
 	</div>
 
+    <select name="sentence_id">
+        <option value="1" >サンプル1</option>
+        <option value="2" >サンプル2</option>
+        <option value="3" >サンプル3</option>
+        </select>
+        
+
 
 	<label>Body</label>
 	<div>
