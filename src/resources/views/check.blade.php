@@ -30,7 +30,7 @@
 
 	<label>Name</label>
 	<div>
-		{{ $input["name"] }}
+		{{ $input["sentence_id"] }}
 	</div>
 
 

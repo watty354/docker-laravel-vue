@@ -15,8 +15,9 @@ class CreateTextTable extends Migration
     {
         Schema::create('text', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('sentence_id');
             $table->string('text');
-            $table->string('name');
+            $table->integer('show_id');
             $table->timestamps();
         });
     }

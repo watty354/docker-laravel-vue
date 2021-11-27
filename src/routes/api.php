@@ -21,6 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => 'api'], function() {
     Route::get('get', 'TodoController@getTodos');
     Route::post('add', 'TodoController@addTodo'); 
-
-
   });

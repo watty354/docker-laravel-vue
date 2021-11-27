@@ -44,7 +44,7 @@
 
 	<label>Name</label>
 	<div>
-		<input type="text" name="name" value="{{ old('name') }}" />
+		<input type="text" name="show_id" value="{{ old('show_id') }}" />
 	</div>
 
     <select name="sentence_id">

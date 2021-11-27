@@ -13,71 +13,38 @@
 use Illuminate\Support\Facades\URL;
 //本物HOME
 Route::get('/', function () {  
-    // return view('home');
+  return view('home');
+});
 
-
-    $url = URL::temporarySignedRoute('unsubscribe', 
-    now()->addSeconds(5), 
-    ['user' => 1]);
-
-// とりあえずwelcomページにリンクを出して見る
-return view('home')->with('url',$url);
-  });
-
-  Route::get('/unsubscribe/{user}', function (Request $request) {
-
-    return view('safe');
-
-})->name('unsubscribe')->middleware('signed');
-
-
-
-
-  //説明
-  Route::get('/about', function () {  
+//説明
+Route::get('/about', function () {  
     return view('about');
-  });
+});
 
   
 
-  //入力
-//   Route::get('/input', function () {  
-//     return view('input');
-//   });
+// 入力画面
+// Route::get('/input', "TextController@show")->name("form.show");
+Route::get('/input', "TextController@show")->name("form.show");
 
-
-  Route::get('/input', "TextController@show")->name("form.show");
-  Route::post('/input', "TextController@post")->name("form.post");
+Route::post('/input', "TextController@post")->name("form.post");
   
-  Route::get('/check', "TextController@confirm")->name("form.confirm");
-  Route::post('/check', "TextController@send")->name("form.send");
+
+// 確認画面
+Route::get('/check', "TextController@confirm")->name("form.confirm");
+Route::post('/check', "TextController@send")->name("form.send");
 
 
  
+// 偽HOME画面
+Route::get('/fake.home/{id}', 'TextController@detail');
 
-
-
-  Route::get('/fake.home/{id}', 'TextController@detail');
-
-  
-  Route::get('/fake.game/{id}', 'TextController@detailText');
-
-
+// 結果画面
+Route::get('/fake.game/{id}', 'TextController@detailText');
 
 
 
 
 
-
-
-
-// Route::get('/home/{id}', 'TextController@detail') -> name('home');
-
-
-
-
-Route::get('text', 'TextController@register')->name('text');
-
-Route::post('store', 'TextController@exeStore')->name('store');
 
 

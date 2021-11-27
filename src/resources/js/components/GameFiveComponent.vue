@@ -8,7 +8,7 @@
 
 
                     <router-link v-bind:to="{name: 'task.list'}">   
-                        <button class="btn btn-success">owari</button>
+                        <button class="btn btn-success" onclick="clickBtn2()">owari</button>
                     </router-link>
 
 
@@ -25,3 +25,5 @@
 <script>
     export default {}
 </script>
+
+

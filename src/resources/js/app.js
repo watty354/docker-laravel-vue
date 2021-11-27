@@ -68,10 +68,11 @@ const app = new Vue({
     el: '#app',
     router,
 
-
     data: {
         todos: [], //←TODO を格納するための配列を用意
-        message: 'Hello World!!'
+        message: 'Hello World!!',
+        appear: false,
+        active01: false
     },
     methods: {
         fetchTodos: function() { //←axios.get で TODO リストを取得しています
@@ -86,15 +87,15 @@ const app = new Vue({
                 this.todos = res.data
                 this.new_todo = ''
             })
-        }
+        },
     },
-    created() { //← インスタンス生成時に fetchTodos()を実行したいので、created フックに登録します。
-        this.fetchTodos()
-    },
-
-
-
-
-
+    computed: {　
+        classColorSet: function() {　　
+            return {　　　
+                show: this.isActive,
+                　　
+            }　　
+        }　
+    }
 
 });

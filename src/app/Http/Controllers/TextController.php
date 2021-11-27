@@ -11,41 +11,16 @@ use Validator;
 
 class TextController extends Controller
 {
-    /**
-     * @return view
-     */
-    public function register() {
+    // /**
+    //  * @return view
+    //  */
+    // public function register() {
 
-        return view('sample.text');
-    }
-
-/**
- * 一覧
- * 
- */
-// public function show() {
-// $texts = text::all();
-
-// return view('sample.show',['texts' => $texts]);
+    //     return view('sample.text');
+    // }
 
 
-// }
 
-
-/**
- * 登録
- * @return view
- */
-
-// public function exeStore(TextRequest $request) {
-    
-//     $inputs = $request->all();
-//     text::create($inputs);
-
-//     return redirect('/check');
-//     // return view('check');
-
-// }
 /**
  * @param int $id
  * @return view
@@ -76,11 +51,11 @@ public function detailText($id) {
 // ======================================================================================================================
 
 
-private $formItems = ["name", "text", "sentence_id"];
-
+private $formItems = ["sentence_id", "text", "show_id"];
 
 private $validator = [
-    "name" => "required|string|max:100",
+    "sentence_id" => "required",
+    "show_id" => "required",
     "text" => "required|string|max:100",
 ];
 

@@ -19,18 +19,35 @@
         
         <a href="{{ url('/fake.game', $text -> id)}}">やる</a>
         <div id="app">
-          <game-component></game-component>
-            <router-view></router-view>
+
+
+          <div id="div1">
+            <div id="div2">
+              <p>aaa</a>
+                <game-component></game-component>
+            </div>
+          </div>
+
+
+
+
+          <router-view></router-view>
+            
+
+
+          <button class="btn btn-danger btn-lg" v-on:click='active01=!active01' v-bind:class='{hide:active01}'>削除</button>
   </div>
 
-  <form  action="{{ url('/search') }}">
-    <input type="text" value="{{ $text -> id }}" name ="id">
+<div id="box1" class="hide">
 
-	<input name="back" type="submit" value="戻る" />
-	<input type="submit" value="送信" />
+  <a href="{{ url('/fake.game', $text -> id)}}">やる</a>
 
-</form>
+</div>
+  {{-- <input type="button" value="ボタン" onclick="clickBtn1()"> --}}
+
+
   <!-- Scripts -->
   <script src="{{ mix('/js/app.js') }}" defer></script>
+  <script src="{{ mix('/js/all.js') }}" defer></script>
   </body>
   </html>

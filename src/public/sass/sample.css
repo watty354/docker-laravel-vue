@@ -40,3 +40,10 @@ svg {
     transform: translateY(-135px);
   }
 }
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

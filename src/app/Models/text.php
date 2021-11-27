@@ -11,7 +11,8 @@ class text extends Model
     protected $fillable =
     [
         'text',
-        'name'
+        'sentence_id',
+        'show_id',
     ];
 }
 
