@@ -1932,6 +1932,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1969,6 +1970,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1982,9 +1984,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -2046,6 +2045,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2083,6 +2083,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2096,6 +2097,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -38355,34 +38357,55 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", { staticClass: "navbar navbar-dark" }, [
-        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-          _vm._v("Vue Laravel SPA"),
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c("router-link", { attrs: { to: { name: "task.list" } } }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  attrs: { onclick: "clickBtn2()" },
-                },
-                [_vm._v("owari")]
-              ),
-            ]),
-          ],
-          1
-        ),
-      ]),
+  return _c("div", { staticClass: "deleteEvent" }, [
+    _c("div", { staticClass: "container-fluid mb-3" }, [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("router-link", { attrs: { to: { name: "task.list" } } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-success",
+                attrs: { onclick: "clickBtn2()" },
+              },
+              [_vm._v("はい")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-success",
+                attrs: { onclick: "clickBtn2()" },
+              },
+              [_vm._v("いいえ")]
+            ),
+          ]),
+        ],
+        1
+      ),
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問5")])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+  },
+]
 render._withStripped = true
 
 
@@ -38404,18 +38427,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", { staticClass: "navbar navbar-dark" }, [
-        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-          _vm._v("Vue Laravel SPA"),
-        ]),
+  return _c("div", { staticClass: "deleteEvent" }, [
+    _c("div", { staticClass: "container-fluid mb-3" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "div",
           [
             _c("router-link", { attrs: { to: { name: "game.five" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [_vm._v("5he")]),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("はい"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("いいえ"),
+              ]),
             ]),
           ],
           1
@@ -38424,7 +38453,20 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問4")])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+  },
+]
 render._withStripped = true
 
 
@@ -38446,29 +38488,23 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("nav", { staticClass: "navbar navbar-dark" }, [
-          _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-            _vm._v("Vue Laravel SPA"),
-          ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _vm._m(0),
           _vm._v(" "),
           _c(
             "div",
             [
               _c("router-link", { attrs: { to: { name: "game.one" } } }, [
-                _c("div", { staticClass: "show" }, [
-                  _vm._v("表示されています"),
-                ]),
-                _vm._v(" "),
                 _c(
                   "button",
                   {
                     staticClass: "btn btn-success",
                     attrs: { type: "button", onclick: "clickBtn1()" },
                   },
-                  [_vm._v("1へ")]
+                  [_vm._v("スタート")]
                 ),
               ]),
             ],
@@ -38479,7 +38515,14 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("h3", [_vm._v("性格診断")])])
+  },
+]
 render._withStripped = true
 
 
@@ -38501,20 +38544,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", { staticClass: "navbar navbar-dark" }, [
-        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-          _vm._v("Vue Laravel SPA"),
-        ]),
+  return _c("div", { staticClass: "deleteEvent" }, [
+    _c("div", { staticClass: "container-fluid mb-3" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "div",
           [
-            _c("p", [_vm._v("1")]),
-            _vm._v(" "),
             _c("router-link", { attrs: { to: { name: "game.two" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [_vm._v("2he")]),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("はい"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("いいえ"),
+              ]),
             ]),
           ],
           1
@@ -38523,7 +38570,20 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問1")])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+  },
+]
 render._withStripped = true
 
 
@@ -38545,18 +38605,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", { staticClass: "navbar navbar-dark" }, [
-        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-          _vm._v("Vue Laravel SPA"),
-        ]),
+  return _c("div", { staticClass: "deleteEvent" }, [
+    _c("div", { staticClass: "container-fluid mb-3" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "div",
           [
             _c("router-link", { attrs: { to: { name: "game.four" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [_vm._v("4he")]),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("はい"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("いいえ"),
+              ]),
             ]),
           ],
           1
@@ -38565,7 +38631,20 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問3")])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+  },
+]
 render._withStripped = true
 
 
@@ -38587,18 +38666,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("nav", { staticClass: "navbar navbar-dark" }, [
-        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-          _vm._v("Vue Laravel SPA"),
-        ]),
+  return _c("div", { staticClass: "deleteEvent" }, [
+    _c("div", { staticClass: "container-fluid mb-3" }, [
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "div",
           [
             _c("router-link", { attrs: { to: { name: "game.tree" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [_vm._v("3he")]),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("はい"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("いいえ"),
+              ]),
             ]),
           ],
           1
@@ -38607,7 +38692,20 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問2")])])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+  },
+]
 render._withStripped = true
 
 

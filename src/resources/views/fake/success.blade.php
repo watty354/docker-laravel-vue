@@ -1,7 +1,20 @@
-<div class="card-body pt-0 pb-2">
+@extends('master')
+@section('content')
+
+
+
+
+
     <h3 class="h4 card-title">
-        登録完了！！やったね！
+        偽性格診断完成！
     </h3>
-    <div class="de">{{ $id }}</div>
-</div>
-<a href="{{ url ('/fake.home', $id) }}" >{{ $id }}こちらが偽です</a>
+    <div class="">
+        <button></button>
+    </div>
+
+
+
+    <button class="btn btn-primary" type="button">
+        <a href="{{ url ('/fake.home', $id) }}" >URLへ</a>
+    </button>
+@endsection

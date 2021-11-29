@@ -1,33 +1,60 @@
-{{-- @include('error_card_list')
-<html lang="ja">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>ブログ</title>
-        <link rel="stylesheet" href="/css/app.css">
-        <script src="/js/app.js" defer></script>
-    </head>
 
-<body>
-    <h2>test</h2>
-    <form method="POST" action="{{ route('set') }}">
-        @csrf
+@extends('master')
+@section('content')
 
-        <input  class="form-control" type="text" id="text" name="text" required value="{{ old('text') }}">
+
+
+<form method="post" action="{{ route('form.post') }}">
+    @csrf
     
+<div class="question">
+    <div class="title">
+        <h3>1.定型文を決める</h3>
+    </div>
+    <div class="content">
+        <select name="sentence_id"  value="{{ old('sentence_id') }}">
+            <option value="1" >サンプル1</option>
+            <option value="2" >サンプル2</option>
+            <option value="3" >サンプル3</option>
+            </select>
+    </div>
+</div>
 
 
-    <button type="submit" class="btn btn-primary">
-        投稿する
-    </button>
-    </form>
-</body>
+<div class="question">
+    <div class="title">
+        <h3>2.本音を書く</h3>
+    </div>
+    <div class="content">
+        <textarea name="text">{{ old('text') }}</textarea>
+    </div>
+</div>
 
-</html> --}}
+
+
+<div class="question">
+    <div class="title">
+        <h3>3.ネタばらしをする</h3>
+    </div>
+    <div class="content">
+        <div>
+            <input type="radio" name="show_id" value="1" value="{{ old('show_id') }}"  checked/>はい
+            <input type="radio" name="show_id" value="2" value="{{ old('show_id') }}" />いいえ
+        </div>
+    </div>
+</div>
 
 
 
-<h3>フォーム</h3>
+
+
+
+
+
+
+
+
 
 @if ($errors->any())
 <div style="color:red;">
@@ -39,27 +66,10 @@
 </div>
 @endif
 
-<form method="post" action="{{ route('form.post') }}">
-	@csrf
-
-	<label>Name</label>
-	<div>
-		<input type="text" name="show_id" value="{{ old('show_id') }}" />
-	</div>
-
-    <select name="sentence_id">
-        <option value="1" >サンプル1</option>
-        <option value="2" >サンプル2</option>
-        <option value="3" >サンプル3</option>
-        </select>
-        
-
-
-	<label>Body</label>
-	<div>
-		<textarea name="text">{{ old('text') }}</textarea>
-	</div>
-
-	<input class="btn btn-primary" type="submit" value="送信" />
+	<input class="btn btn-primary" type="submit" value="送信" onclick="clickBtn3()"/>
 
 </form>
+    
+
+
+@endsection

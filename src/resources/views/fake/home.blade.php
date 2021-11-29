@@ -8,41 +8,31 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
-        <title>{{ config('app.name', 'Vue Laravel SPA') }}</title>
+        <title>めちゃくちゃあたる性格診断</title>
         
         <!-- Styles -->
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="de">{{ $text -> id }}</div>
-        <div class="de">{{ $text -> text }}</div>
-        
-        <a href="{{ url('/fake.game', $text -> id)}}">やる</a>
-        <div id="app">
-
-
-          <div id="div1">
-            <div id="div2">
-              <p>aaa</a>
-                <game-component></game-component>
-            </div>
-          </div>
-
-
-
-
-          <router-view></router-view>
-            
-
-
-          <button class="btn btn-danger btn-lg" v-on:click='active01=!active01' v-bind:class='{hide:active01}'>削除</button>
+<div class="container">
+  <div id="app">
+    <div id="div1">
+      <div id="div2">
+          <game-component></game-component>
+      </div>
+    </div>
+    <router-view></router-view>
   </div>
+  
+  <div id="box1" class="hide">
+  <a href="{{ url('/fake.game', $text -> id)}}">結果を見る</a>
+  </div>
+  
 
-<div id="box1" class="hide">
+</div>        
+        {{-- <a href="{{ url('/fake.game', $text -> id)}}">やる</a> --}}
 
-  <a href="{{ url('/fake.game', $text -> id)}}">やる</a>
 
-</div>
   {{-- <input type="button" value="ボタン" onclick="clickBtn1()"> --}}
 
 

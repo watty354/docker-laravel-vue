@@ -1,26 +1,27 @@
 <template>
-    <div class="container-fluid bg-dark mb-3">
+<div class="deleteEvent">
+    <div class="container-fluid mb-3">
         <div class="container">
-            <nav class="navbar navbar-dark">
-                <span class="navbar-brand mb-0 h1">Vue Laravel SPA</span>
-                <div>
+
+    <div class="qiuz">
+        <p>質問5</p>
+    </div>
+    <div class="quiz_content">
+        <p>？</p>
+    </div>
 
 
 
                     <router-link v-bind:to="{name: 'task.list'}">   
-                        <button class="btn btn-success" onclick="clickBtn2()">owari</button>
+                        <button class="btn btn-success" onclick="clickBtn2()">はい</button>
+                        <button class="btn btn-success" onclick="clickBtn2()">いいえ</button>
                     </router-link>
-
-
-
-
-
-
-                </div>
-            </nav>
+              </div>
         </div>
     </div>
+</div>
 </template>
+
 
 <script>
     export default {}

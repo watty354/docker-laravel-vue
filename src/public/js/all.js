@@ -1,21 +1,3 @@
-$(document)(function() {
-    $(".title").lettering();
-    $(".button").lettering();
-});
-
-
-
-
-
-$(document)(function() {
-    animation();
-}, 1000);
-
-$('.button').click(function() {
-    animation();
-});
-
-
 function animation() {
     var title1 = new TimelineMax();
     title1.to(".button", 0, { visibility: 'hidden', opacity: 0 })
@@ -23,17 +5,6 @@ function animation() {
     title1.to(".button", 0.2, { visibility: 'visible', opacity: 1 })
 }
 
-
-$(document).on("click", ".deleteEvent", function(e) {
-    // $(this)でイベントが発生した要素を取得して削除する
-    $(this).remove();
-});
-
-const btn = document.querySelector('.btn');
-
-btn.addEventListener('click', function() {
-    this.classList.add('hide');
-});
 
 
 
@@ -48,3 +19,21 @@ function clickBtn2() {
     qs1.classList.remove("hide");
     qs1.classList.add("show");
 }
+
+function clickBtn3() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.remove("loaded");
+}
+
+
+//ロード中
+window.onload = function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+}
+
+// 戻ってきたときのロード中を削除
+window.addEventListener('pageshow', function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+});

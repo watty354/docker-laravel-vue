@@ -1,52 +1,32 @@
-{{-- <div class="">チェックします</div>
-<form method="POST" action="{{ route('user.resister_resister') }}">
-    <div class="md-form">
-        <label for="name">テキスト</label>
-        {{ $input["text"] }}
-        <input class="form-control" type="hidden" id="text" name="text" required value="{{ $input["text"] }}">
-    </div>
+@extends('master')
+@section('content')
 
-<div class="">
-    <a href="{{ url('/input') }}">
-        修正
-</a>
-</div>
-<div class="">
-    <a href="{{ url('/fake.success') }}">
-        偽HOMEへ
-</a>
-</div>
-
-<button class="btn btn-block blue-gradient mt-2 mb-2" type="submit" name="back">戻って変更する</button>
-<button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">確認して登録する</button>
-</form>
-</div> --}}
-
-
-<h3>確認</h3>
+<p>以下のように表示されます</p>
 
 <form method="post" action="{{ route('form.send') }}">
 	@csrf
 
-	<label>Name</label>
-	<div>
-		{{ $input["sentence_id"] }}
-	</div>
 
 
-	<label>Name</label>
+
+
+
+
+
+<div class="">
 	<div>
 		{{ $sentence -> sentence }}
 	</div>
 
 
-
-	<label>Text</label>
 	<div>
 		{{ $input['text'] }}
 	</div>
+</div>
 
-	<input name="back" type="submit" value="戻る" />
-	<input type="submit" value="送信" />
-
+	<input name="back" type="submit" value="修正" />
+	<input type="submit" value="決定" />
 </form>
+
+
+@endsection

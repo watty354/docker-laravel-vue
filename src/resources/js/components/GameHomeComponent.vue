@@ -1,24 +1,21 @@
 <template>
-<div class="deleteEvent">
-    <div class="container-fluid bg-dark mb-3">
-        <div class="container">
-            <nav class="navbar navbar-dark">
-                <span class="navbar-brand mb-0 h1">Vue Laravel SPA</span>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+
                 <div>
-
-
-                    <router-link v-bind:to="{name: 'game.one'}">   
-                     <div class="show">表示されています</div>
-                        <button type="button" class="btn btn-success" onclick="clickBtn1()">1へ</button>
-
-
-                    </router-link>
-                        
+                <h3>性格診断</h3>
                 </div>
-            </nav>
+                <div>
+                    <router-link v-bind:to="{name: 'game.one'}">   
+                        <button type="button" class="btn btn-success" onclick="clickBtn1()">スタート</button>
+                    </router-link>   
+                </div>
+  </div>
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>

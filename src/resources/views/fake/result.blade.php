@@ -20,6 +20,8 @@
 
             <input type="text" value="{{ $text -> text }}">
 
+            <div>{{ $sentence -> sentence }}</div>
+
         <a href="{{url('/')}}">netabarasi 
         </a>
 <!-- Scripts -->

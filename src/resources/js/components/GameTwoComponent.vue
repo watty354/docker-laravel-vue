@@ -1,25 +1,26 @@
 <template>
-    <div class="container-fluid bg-dark mb-3">
+<div class="deleteEvent">
+    <div class="container-fluid mb-3">
         <div class="container">
-            <nav class="navbar navbar-dark">
-                <span class="navbar-brand mb-0 h1">Vue Laravel SPA</span>
+
+    <div class="qiuz">
+        <p>質問2</p>
+    </div>
+    <div class="quiz_content">
+        <p>？</p>
+    </div>
+
+
+
                 <div>
-
-
-
                     <router-link v-bind:to="{name: 'game.tree'}">   
-                        <button class="btn btn-success">3he</button>
-                    </router-link>
-
-
-
-
-
-
+                        <button class="btn btn-success">はい</button>
+                        <button class="btn btn-success">いいえ</button>
+                    </router-link>       
                 </div>
-            </nav>
         </div>
     </div>
+</div>
 </template>
 
 <script>

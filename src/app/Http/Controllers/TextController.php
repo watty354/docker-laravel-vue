@@ -42,9 +42,11 @@ public function detailText($id) {
     
     $text = text::find($id);
 
+    $sentence_id = $text->sentence_id; 
     
+    $sentence = Personality::find($sentence_id);
 
-    return view('fake.result',['text' => $text]);
+    return view('fake.result',['text' => $text,"sentence" =>$sentence]);
 }
 
 
@@ -56,7 +58,7 @@ private $formItems = ["sentence_id", "text", "show_id"];
 private $validator = [
     "sentence_id" => "required",
     "show_id" => "required",
-    "text" => "required|string|max:100",
+    "text" => "required",
 ];
 
 function show(Request $request){
