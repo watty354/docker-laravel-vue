@@ -22,11 +22,12 @@
         <span class="slice"></span>
         <span class="slice"></span>
     </div>
+
     </div>
     
     
-    <header class="header">ヘッダ</header>
-    <div class="container">
+    {{-- <header class="header">ヘッダ</header> --}}
+    <div class="container fadein">
         @yield('content')
     </div>
     <footer class="footer">2021 © m-wada</footer>

@@ -5,16 +5,25 @@
 
 
 
-    <h3 class="h4 card-title">
-        偽性格診断完成！
+    <h3 class="mt-5 mb-5 sentence">
+        偽性格診断完成
     </h3>
-    <div class="">
-        <button></button>
+    <button id="copy" class="button" class="button coisbg" onclick="copy()" value="{{ url ('/fake.home', $id) }}">クリックでコピー</button>
+    <div class="card">
+        <div id="info" class="card-body bg-secondary text-white hide">
+          コピーしました
+        </div>
+      </div>
+      
+
+
+    {{-- <button class="btn btn-primary" type="button">
+        <a href="{{ url ('/fake.home', $id) }}" >URLへ</a>
+    </button> --}}
+
+    <div class="next">
+        <a href="{{ url ('/fake.home', $id) }}" class="button" onclick="clickBtn3()">URLへ</a>
     </div>
 
 
-
-    <button class="btn btn-primary" type="button">
-        <a href="{{ url ('/fake.home', $id) }}" >URLへ</a>
-    </button>
 @endsection

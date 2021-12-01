@@ -28,7 +28,10 @@ class TextController extends Controller
 
 public function detail($id) {
     
-    $text = text::find($id);
+// 復号
+    $motoId = decrypt($id);
+    $text = text::find($motoId);
+    // $text = text::find($id);
 
     
 
@@ -125,8 +128,10 @@ function send(Request $request){
     //ここでメールを送信するなどを行う
     $data = text::create($input);
 
-    $id = $data->id;
 
+    $Id = $data->id;
+    // $motoId = $data->id;
+    // $id = encrypt($motoId);
     // //セッションを空にする
     // $request->session()->forget("form_input");
 

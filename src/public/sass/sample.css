@@ -1,5 +1,6 @@
+@charset "UTF-8";
 body {
-  background: #C8C8A9;
+  background: #ebe5df;
   text-align: center;
 }
 
@@ -379,6 +380,7 @@ svg {
 }
 body {
   background: #efefef;
+  font-family: "Helvetica Neue", Helvetica, Arial, "\6E38\30B4\30B7\30C3\30AF\4F53", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 .preloader {
@@ -501,20 +503,481 @@ body {
 }
 
 .load {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
   background: #ebe5df;
   z-index: 2147483647;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 70px;
+  /* 角丸       */
+  font-size: 12pt;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 26px;
+  /* 余白       */
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  /* 背景色     */
+  color: #ffffff;
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  opacity: 1;
+  /* 透明度     */
+  transition: 0.3s;
+  /* なめらか変化 */
+  box-shadow: 8px 8px 3px #666666;
+  /* 影の設定 */
+  width: 297px;
+  height: 70px;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  box-shadow: none;
+  /* カーソル時の影消去 */
+  opacity: 0.8;
+  /* カーソル時透明度 */
+}
+
+.next {
+  margin-top: 5rem;
+}
+
+.sentence {
+  color: #45b3c1;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.question span {
+  font-size: 36px;
+}
+
+.center {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** Custom Select **/
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-select-wrapper select {
+  display: none;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select-trigger {
+  position: relative;
+  display: block;
+  width: 130px;
+  padding: 0 84px 0 22px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 60px;
+  background: #45b3c1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-select-trigger:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 25px;
+  margin-top: -3px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all 0.4s ease-in-out;
+  transform-origin: 50% 0;
+}
+
+.custom-select.opened .custom-select-trigger:after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  margin: 15px 0;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+}
+
+.custom-select.opened .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.custom-options:before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 100%;
+  right: 25px;
+  width: 7px;
+  height: 7px;
+  margin-bottom: -4px;
+  border-top: 1px solid #b5b5b5;
+  border-left: 1px solid #b5b5b5;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.option-hover:before {
+  background: #f9f9f9;
+}
+
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px;
+  border-bottom: 1px solid #b5b5b5;
+  font-size: 18px;
+  font-weight: 600;
+  color: #b5b5b5;
+  line-height: 47px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.custom-option:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+.custom-option:last-of-type {
+  border-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.custom-option:hover,
+.custom-option.selection {
+  background: #f9f9f9;
+}
+
+.textArea {
+  /* 入力域の最大幅 */
+  background: #ffffff;
+  /* 入力域の背景色 */
+  border: 2px solid #45b3c1;
+  /* 入力域の枠線   */
+  border-radius: 4px;
+  /* 入力域の角丸   */
+  padding: 12px;
+  /* 入力文字の余白 */
+  font-size: 18px;
+  /* 入力文字サイズ */
+  color: #333333;
+  /* 入力文字の色   */
+  font-weight: bold;
+  /* 入力文字の太字 */
+  letter-spacing: 0.1em;
+  /* 入力文字の間隔 */
+  line-height: 30px;
+  /* 入力文字の間隔 */
+  width: 100%;
+}
+
+/* --- 入力フィールドにフォーカスか来たら ----------------*/
+.textArea:focus {
+  box-shadow: 4px 4px 2px #999;
+  /* 影付け     */
+  outline: 0;
+}
+
+/* --- 入力説明の文字(標準) -----------------------------*/
+.textArea:-moz-placeholder-shown {
+  color: #808080;
+  /* 文字色     */
+}
+.textArea:-ms-input-placeholder {
+  color: #808080;
+  /* 文字色     */
+}
+.textArea:placeholder-shown {
+  color: #808080;
+  /* 文字色     */
+}
+
+/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/
+.textArea::-webkit-input-placeholder {
+  color: #808080;
+  /* 文字色     */
+}
+
+/* --- 入力説明の文字(IE用) -----------------------------*/
+.textArea:-ms-input-placeholder {
+  color: #808080;
+  /* 文字色     */
+}
+
+label {
+  display: inline-block;
+  font-size: 20px;
+  width: 120px;
+  line-height: 90px;
+  text-align: center;
+  color: #808080;
+  border: 3px solid #45b3c1;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 0 45px #FFF inset;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+.check input {
+  display: none;
+}
+
+input:checked + label {
+  box-shadow: 0 0 0 -1px #FFF inset;
+  color: #FFF;
+  background: #45b3c1;
+  border-color: #45b3c1;
+}
+
+.uncheck label {
+  border: 3px solid #FF0844;
+}
+
+.uncheck input:checked + label {
+  background: #FF0844;
+  border-color: #FF0844;
+}
+
+.check {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel {
+  width: 180px;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+.B_5 {
+  border: 5px solid #45b3c1;
+  border-radius: 5px;
+  background: #FFF;
+  font-size: 18px;
+  /* 入力文字サイズ */
+  color: #333333;
+  /* 入力文字の色   */
+  font-weight: bold;
+  /* 入力文字の太字 */
+  letter-spacing: 0.1em;
+  /* 入力文字の間隔 */
+  line-height: 30px;
+  /* 入力文字の間隔 */
+  width: 100%;
+}
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button .button {
+  width: 180px;
+  background-image: linear-gradient(to top, #F794A4 0%, #FDD6BD 100%);
+}
+
+.card-body {
+  border-radius: 5px;
+}
+
+.vue_sentence {
+  margin: auto;
+}
+
+.vue_cancel {
+  width: 297px;
+}
+
+.vue_row {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  margin: initial;
+}
+
+.result {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* 画面外にいる状態 */
+.fadein {
+  opacity: 0;
+  -webkit-animation: fadeIn 1.5s ease 0.5s 1 normal;
+          animation: fadeIn 1.5s ease 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  /*animetion-nameで設定した値を書く*/
+  0% {
+    opacity: 0;
+  }
+  /*アニメーション開始時は不透明度0%*/
+  100% {
+    opacity: 1;
+  }
+  /*アニメーション終了時は不透明度100%*/
+}
+
+@keyframes fadeIn {
+  /*animetion-nameで設定した値を書く*/
+  0% {
+    opacity: 0;
+  }
+  /*アニメーション開始時は不透明度0%*/
+  100% {
+    opacity: 1;
+  }
+  /*アニメーション終了時は不透明度100%*/
+}
+.main-heading {
+  color: #777;
+  text-transform: uppercase;
+}
+
+.main-heading-primary {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-animation: moveInLeft 1s ease-out;
+          animation: moveInLeft 1s ease-out;
+}
+
+.main-heading-secondary {
+  display: block;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #45b3c1;
+  -webkit-animation: moveInRight 1s ease-out;
+          animation: moveInRight 1s ease-out;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

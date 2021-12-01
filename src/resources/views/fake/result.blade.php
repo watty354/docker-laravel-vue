@@ -1,30 +1,24 @@
+@extends('master')
+@section('content')
+<div class="sentence mt-5 mb-4 result">
+	<p>診断結果</p>
+</div>
 
 
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        
-        <title>{{ config('app.name', 'Vue Laravel SPA') }}</title>
-        
-        <!-- Styles -->
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
-    </head>
-    <body>
-        <div class="de">{{ $text -> id }}</div>
+            <div class="box B_5 mt-5 mb-5">
+                <div class="confirm">
+                        <div class="text-left">
+                            {{ $sentence -> sentence }}
+                        </div>
+                        <div class="text-left  text-break">
+                            {{ $text -> text }}
+                        </div>
+                    </div>
+            </div>
 
 
-            <input type="text" value="{{ $text -> text }}">
+@if ($text -> show_id ===1)
+<a href="{{url('/')}}" class="button mt-5 mb-5" onclick="clickBtn3()">ネタばらし</a>
+@endif
 
-            <div>{{ $sentence -> sentence }}</div>
-
-        <a href="{{url('/')}}">netabarasi 
-        </a>
-<!-- Scripts -->
-<script src="{{ mix('/js/app.js') }}" defer></script>
-</body>
-</html>
+@endsection

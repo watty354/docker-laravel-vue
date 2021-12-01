@@ -1,27 +1,27 @@
 <template>
-<div class="deleteEvent">
-    <div class="container-fluid mb-3">
-        <div class="container">
+<div class="row vue_row">
 
-    <div class="qiuz">
-        <p>質問5</p>
-    </div>
-    <div class="quiz_content">
-        <p>？</p>
-    </div>
+<div id="vue_button">   
+<div class="sentence mt-5 mb-3 vue_sentence">
+<p>質問5</p>
+</div>
 
 
+<div class="box B_5">
+<div class="confirm">
+<div class="text-center text-break">
+<p>大事なのは？</p>
+</div>
+</div>
+</div>
 
-                    <router-link v-bind:to="{name: 'task.list'}">   
-                        <button class="btn btn-success" onclick="clickBtn2()">はい</button>
-                        <button class="btn btn-success" onclick="clickBtn2()">いいえ</button>
-                    </router-link>
-              </div>
-        </div>
-    </div>
+
+<button class="button cancel mt-5 mb-5 vue_cancel" onclick="clickBtn2()">自分</button>
+<button class="button mt-5 mb-5 " onclick="clickBtn2()">お金</button>     
+</div>
+
 </div>
 </template>
-
 
 <script>
     export default {}

@@ -10,30 +10,45 @@
         
         <title>めちゃくちゃあたる性格診断</title>
         
-        <!-- Styles -->
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('/sass/sample.css') }}" rel="stylesheet">
+        <script src="{{ mix('js/all.js') }}" async></script>
     </head>
     <body>
 <div class="container">
+
+      {{-- 1oading --}}
+      <div id="loading" class="load">
+        <div id="loading" class="preloader loading">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+        </div>
+    
+        </div>
+
+
   <div id="app">
     <div id="div1">
       <div id="div2">
           <game-component></game-component>
       </div>
     </div>
-    <router-view></router-view>
+    <div class="fadein">
+      <router-view></router-view>
+    </div>
   </div>
   
   <div id="box1" class="hide">
-  <a href="{{ url('/fake.game', $text -> id)}}">結果を見る</a>
+  <a href="{{ url('/fake.game', $text -> id)}}" class="button mt-5" onclick="clickBtn3()">結果を見る</a>
   </div>
   
-
+  <footer class="footer">2021 © m-wada</footer>
 </div>        
-        {{-- <a href="{{ url('/fake.game', $text -> id)}}">やる</a> --}}
 
-
-  {{-- <input type="button" value="ボタン" onclick="clickBtn1()"> --}}
 
 
   <!-- Scripts -->

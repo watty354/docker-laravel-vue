@@ -1971,6 +1971,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1984,9 +1986,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -2021,6 +2020,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -2084,6 +2087,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2097,6 +2102,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -6506,6 +6513,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\n.hide {\r\ndisplay: none;\n}\n.show {\r\n   display: block;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.v-enter-active[data-v-5ff82798], .v-leave-active[data-v-5ff82798] {\r\n  transition: opacity .5s\n}\n.v-enter[data-v-5ff82798], .v-leave-to[data-v-5ff82798] {\r\n  opacity: 0\n}\r\n", ""]);
 
 // exports
 
@@ -37758,6 +37784,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -38357,53 +38413,46 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid mb-3" }, [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("router-link", { attrs: { to: { name: "task.list" } } }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                attrs: { onclick: "clickBtn2()" },
-              },
-              [_vm._v("はい")]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                attrs: { onclick: "clickBtn2()" },
-              },
-              [_vm._v("いいえ")]
-            ),
-          ]),
-        ],
-        1
-      ),
-    ]),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問5")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+    return _c("div", { staticClass: "row vue_row" }, [
+      _c("div", { attrs: { id: "vue_button" } }, [
+        _c("div", { staticClass: "sentence mt-5 mb-3 vue_sentence" }, [
+          _c("p", [_vm._v("質問5")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "box B_5" }, [
+          _c("div", { staticClass: "confirm" }, [
+            _c("div", { staticClass: "text-center text-break" }, [
+              _c("p", [_vm._v("大事なのは？")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "button cancel mt-5 mb-5 vue_cancel",
+            attrs: { onclick: "clickBtn2()" },
+          },
+          [_vm._v("自分")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "button mt-5 mb-5 ",
+            attrs: { onclick: "clickBtn2()" },
+          },
+          [_vm._v("お金")]
+        ),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -38427,30 +38476,26 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c("router-link", { attrs: { to: { name: "game.five" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("はい"),
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("いいえ"),
-              ]),
-            ]),
-          ],
-          1
-        ),
-      ]),
-    ]),
+  return _c("div", { staticClass: "row vue_row" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("router-link", { attrs: { to: { name: "game.five" } } }, [
+          _c("button", { staticClass: "button cancel mt-5 mb-5 vue_cancel" }, [
+            _vm._v("はい"),
+          ]),
+          _vm._v(" "),
+          _c("button", { staticClass: "button mt-5 mb-5 " }, [
+            _vm._v("いいえ"),
+          ]),
+        ]),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [
@@ -38458,13 +38503,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問4")])])
+    return _c("div", { staticClass: "sentence mt-5 mb-3 vue_sentence" }, [
+      _c("p", [_vm._v("質問4")]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+    return _c("div", { staticClass: "box B_5" }, [
+      _c("div", { staticClass: "confirm" }, [
+        _c("div", { staticClass: "text-center text-break" }, [
+          _c("p", [_vm._v("猫舌ですか？")]),
+        ]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -38488,31 +38541,25 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card" }, [
-          _vm._m(0),
-          _vm._v(" "),
+  return _c("div", { staticClass: "row fadein vue_home" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("router-link", { attrs: { to: { name: "game.one" } } }, [
           _c(
-            "div",
-            [
-              _c("router-link", { attrs: { to: { name: "game.one" } } }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-success",
-                    attrs: { type: "button", onclick: "clickBtn1()" },
-                  },
-                  [_vm._v("スタート")]
-                ),
-              ]),
-            ],
-            1
+            "button",
+            {
+              staticClass: "button",
+              attrs: { type: "button", onclick: "clickBtn1()" },
+            },
+            [_vm._v("スタート")]
           ),
         ]),
-      ]),
-    ]),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [
@@ -38520,7 +38567,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h3", [_vm._v("性格診断")])])
+    return _c("div", { staticClass: "mt-5 mb-5 wrapper" }, [
+      _c("h1", { attrs: { "data-heading": "偽性格診断" } }, [
+        _vm._v("偽性格診断"),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -38529,10 +38580,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798& ***!
-  \*******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38544,46 +38595,41 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c("router-link", { attrs: { to: { name: "game.two" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("はい"),
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("いいえ"),
-              ]),
-            ]),
-          ],
-          1
-        ),
+  return _c("transition", [
+    _c("div", { staticClass: "row vue_row" }, [
+      _c("div", { staticClass: "sentence mt-5 mb-3 vue_sentence" }, [
+        _c("p", [_vm._v("質問1")]),
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "box B_5" }, [
+        _c("div", { staticClass: "confirm" }, [
+          _c("div", { staticClass: "text-center text-break" }, [
+            _c("p", [_vm._v("朝食はごはん派？パン派？")]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        [
+          _c("router-link", { attrs: { to: { name: "game.two" } } }, [
+            _c(
+              "button",
+              { staticClass: "button cancel mt-5 mb-5 vue_cancel" },
+              [_vm._v("ごはん")]
+            ),
+            _vm._v(" "),
+            _c("button", { staticClass: "button mt-5 mb-5 " }, [
+              _vm._v("パン"),
+            ]),
+          ]),
+        ],
+        1
+      ),
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問1")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -38605,30 +38651,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c("router-link", { attrs: { to: { name: "game.four" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("はい"),
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("いいえ"),
-              ]),
-            ]),
-          ],
-          1
-        ),
-      ]),
-    ]),
+  return _c("div", { staticClass: "row vue_row" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("router-link", { attrs: { to: { name: "game.four" } } }, [
+          _c("button", { staticClass: "button cancel mt-5 mb-5 vue_cancel" }, [
+            _vm._v("頭痛"),
+          ]),
+          _vm._v(" "),
+          _c("button", { staticClass: "button mt-5 mb-5 " }, [_vm._v("腹痛")]),
+        ]),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [
@@ -38636,13 +38676,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問3")])])
+    return _c("div", { staticClass: "sentence mt-5 mb-3 vue_sentence" }, [
+      _c("p", [_vm._v("質問3")]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+    return _c("div", { staticClass: "box B_5" }, [
+      _c("div", { staticClass: "confirm" }, [
+        _c("div", { staticClass: "text-center text-break" }, [
+          _c("p", [_vm._v("なりたくないのは？")]),
+        ]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -38666,30 +38714,26 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "deleteEvent" }, [
-    _c("div", { staticClass: "container-fluid mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          [
-            _c("router-link", { attrs: { to: { name: "game.tree" } } }, [
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("はい"),
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "btn btn-success" }, [
-                _vm._v("いいえ"),
-              ]),
-            ]),
-          ],
-          1
-        ),
-      ]),
-    ]),
+  return _c("div", { staticClass: "row vue_row" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c(
+      "div",
+      [
+        _c("router-link", { attrs: { to: { name: "game.tree" } } }, [
+          _c("button", { staticClass: "button cancel mt-5 mb-5 vue_cancel" }, [
+            _vm._v("おでん"),
+          ]),
+          _vm._v(" "),
+          _c("button", { staticClass: "button mt-5 mb-5 " }, [
+            _vm._v("きつねうどん"),
+          ]),
+        ]),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [
@@ -38697,13 +38741,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "qiuz" }, [_c("p", [_vm._v("質問2")])])
+    return _c("div", { staticClass: "sentence mt-5 mb-3 vue_sentence" }, [
+      _c("p", [_vm._v("質問2")]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quiz_content" }, [_c("p", [_vm._v("？")])])
+    return _c("div", { staticClass: "box B_5" }, [
+      _c("div", { staticClass: "confirm" }, [
+        _c("div", { staticClass: "text-center text-break" }, [
+          _c("p", [_vm._v("地球最後の日に食べるなら？")]),
+        ]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -54533,9 +54585,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GameOneComponent.vue?vue&type=template&id=5ff82798& */ "./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&");
+/* harmony import */ var _GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true& */ "./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true&");
 /* harmony import */ var _GameOneComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GameOneComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/GameOneComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& */ "./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -54543,13 +54597,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _GameOneComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "5ff82798",
   null
   
 )
@@ -54575,19 +54629,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&":
+/*!***************************************************************************************************************!*\
+  !*** ./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=style&index=0&id=5ff82798&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_style_index_0_id_5ff82798_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true& ***!
+  \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./GameOneComponent.vue?vue&type=template&id=5ff82798& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GameOneComponent.vue?vue&type=template&id=5ff82798&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GameOneComponent_vue_vue_type_template_id_5ff82798_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
