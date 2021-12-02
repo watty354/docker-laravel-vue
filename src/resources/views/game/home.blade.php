@@ -15,8 +15,6 @@
         <script src="{{ mix('js/all.js') }}" async></script>
     </head>
     <body>
-<div class="container">
-
       {{-- 1oading --}}
       <div id="loading" class="load">
         <div id="loading" class="preloader loading">
@@ -29,6 +27,8 @@
         </div>
     
         </div>
+<div class="container">
+
 
 
   <div id="app">
@@ -37,13 +37,13 @@
           <game-component></game-component>
       </div>
     </div>
-    <div class="fadein">
+    <div>
       <router-view></router-view>
     </div>
   </div>
   
   <div id="box1" class="hide">
-  <a href="{{ url('/fake.game', $text -> id)}}" class="button mt-5" onclick="clickBtn3()">結果を見る</a>
+  <a href="{{ url('/game.game', $text -> id)}}" class="button result mb-5" onclick="clickBtn3()">結果を見る</a>
   </div>
   
   <footer class="footer">2021 © m-wada</footer>

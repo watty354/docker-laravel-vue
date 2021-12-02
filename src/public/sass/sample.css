@@ -4,51 +4,6 @@ body {
   text-align: center;
 }
 
-svg {
-  margin: 50px auto;
-  width: 45%;
-}
-
-.logo {
-  fill: #FE4365;
-}
-
-.clip {
-  -webkit-animation: slide 8s infinite;
-          animation: slide 8s infinite;
-}
-
-@-webkit-keyframes slide {
-  from {
-    transform: translateY(-135px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  to {
-    transform: translateY(-135px);
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: translateY(-135px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  to {
-    transform: translateY(-135px);
-  }
-}
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 @-webkit-keyframes preload-show-1 {
   from {
     transform: rotateZ(60deg) rotateY(-90deg) rotateX(0deg);
@@ -552,9 +507,10 @@ a {
   height: 70px;
   text-decoration: none;
   border: none;
+  position: relative;
 }
 
-.button:hover {
+.button:active {
   box-shadow: none;
   /* カーソル時の影消去 */
   opacity: 0.8;
@@ -833,11 +789,12 @@ input:checked + label {
   width: 100%;
 }
 
-.card {
+.copy_info {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
 button .button {
@@ -863,6 +820,10 @@ button .button {
 }
 
 .text-center {
+  margin: initial;
+}
+
+p {
   margin: initial;
 }
 
@@ -980,4 +941,11 @@ button .button {
     opacity: 1;
     transform: translate(0);
   }
+}
+.result {
+  margin-top: 15rem;
+}
+
+.error {
+  color: #45b3c1;
 }

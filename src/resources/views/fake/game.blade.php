@@ -1,1 +1,0 @@
-<a href="{{ url('/fake.result')}}">結果</a>

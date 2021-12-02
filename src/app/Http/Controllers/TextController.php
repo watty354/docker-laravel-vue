@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-
 use App\Models\text;
 use App\Models\Personality;
 use Illuminate\Http\Request;
@@ -11,17 +9,11 @@ use Validator;
 
 class TextController extends Controller
 {
-    // /**
-    //  * @return view
-    //  */
-    // public function register() {
-
-    //     return view('sample.text');
-    // }
 
 
 
 /**
+ * 偽HOME遷移
  * @param int $id
  * @return view
  */
@@ -29,15 +21,15 @@ class TextController extends Controller
 public function detail($id) {
     
 // 復号
-    $motoId = decrypt($id);
-    $text = text::find($motoId);
-    // $text = text::find($id);
+    // $motoId = decrypt($id);
+    // $text = text::find($motoId);
+    $text = text::find($id);
 
-    
-
-    return view('fake.home',['text' => $text]);
+    return view('game.home',['text' => $text]);
 }
+
 /**
+ * 診断結果表示
  * @param int $id
  * @return view
  */
@@ -49,30 +41,24 @@ public function detailText($id) {
     
     $sentence = Personality::find($sentence_id);
 
-    return view('fake.result',['text' => $text,"sentence" =>$sentence]);
+    return view('game.result',['text' => $text,"sentence" =>$sentence]);
 }
-
-
 // ======================================================================================================================
 
-
 private $formItems = ["sentence_id", "text", "show_id"];
-
 private $validator = [
     "sentence_id" => "required",
     "show_id" => "required",
     "text" => "required",
 ];
-
 function show(Request $request){
     return view("input");
 }
 
-
-
-
-
-
+/**
+ * 入力画面
+ * 
+ */
 function post(Request $request){
     
     $input = $request->only($this->formItems);
@@ -91,6 +77,11 @@ function post(Request $request){
     return redirect()->action("TextController@confirm");
 }
 
+
+/**
+ * 確認画面
+ * 
+ */
 function confirm(Request $request){
 
     //セッションから値を取り出す
@@ -107,7 +98,10 @@ function confirm(Request $request){
 
     return view("check",["input" => $input,"sentence" =>$sentence]);
 }
-
+/**
+ * 登録画面
+ * 
+ */
 function send(Request $request){
 
     //セッションから値を取り出す
@@ -128,14 +122,13 @@ function send(Request $request){
     //ここでメールを送信するなどを行う
     $data = text::create($input);
 
-
-    $Id = $data->id;
+    $id = $data->id;
     // $motoId = $data->id;
     // $id = encrypt($motoId);
     // //セッションを空にする
     // $request->session()->forget("form_input");
 
-    return view("fake.success", compact('id'));
+    return view("game.success", compact('id'));
     }
 
 }

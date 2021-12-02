@@ -61,18 +61,12 @@ const router = new VueRouter({
     ]
 });
 
-
-
-
 const app = new Vue({
     el: '#app',
     router,
 
     data: {
-        todos: [], //←TODO を格納するための配列を用意
-        message: 'Hello World!!',
-        appear: false,
-        active01: false
+        todos: [], //←TODO を格納するための配列を用意,
     },
     methods: {
         fetchTodos: function() { //←axios.get で TODO リストを取得しています

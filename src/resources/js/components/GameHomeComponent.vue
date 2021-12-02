@@ -1,15 +1,21 @@
 <template>
-        <div class="row fadein vue_home">
+        <div class="vue_home">
 
 
-                <div class="mt-5 mb-5 wrapper">
-                        <h1 data-heading="偽性格診断">偽性格診断</h1>
-                </div>
+        <div class="main mt-5 mb-5">
+            <h1 class="main-heading">
+              <span class="main-heading-primary">性格診断</span>
+              <span class="main-heading-secondary">
+                めちゃくちゃ当たります</span>
+            </h1>
+          </div>
                 <div>
                     <router-link v-bind:to="{name: 'game.one'}">   
-                        <button type="button" class="button" onclick="clickBtn1()">スタート</button>
+                        <button type="button" class="button mb-5 mt-5" onclick="clickBtn1()">スタート</button>
                     </router-link>   
                 </div>
+
+                <p class="error">※精密なので戻ってしまうと不具合が起きるためお控えください</p>
 
 
         </div>

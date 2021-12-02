@@ -80,11 +80,7 @@ function textAreaHeightSet(argObj) {
 }
 
 function copy() {
-    // // コピー対象をJavaScript上で変数として定義する
-    // var copyTarget = document.getElementById("copyTarget");
 
-    // // 選択しているテキストをクリップボードにコピーする
-    // document.execCommand("Copy");
 
     const copy = document.getElementById('copy');
     navigator.clipboard.writeText(copy.value);

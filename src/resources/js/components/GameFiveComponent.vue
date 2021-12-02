@@ -1,5 +1,5 @@
 <template>
-<div class="row vue_row">
+<div class="vue_row">
 
 <div id="vue_button">   
 <div class="sentence mt-5 mb-3 vue_sentence">

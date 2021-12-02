@@ -1,6 +1,6 @@
 <template>
 <transition>
-<div class="row vue_row">
+<div class="vue_row">
 
 <div class="sentence mt-5 mb-3 vue_sentence">
 <p>質問1</p>
@@ -17,9 +17,11 @@
 
 
 <div>
-<router-link v-bind:to="{name: 'game.two'}">   
-<button class="button cancel mt-5 mb-5 vue_cancel">ごはん</button>
-<button class="button mt-5 mb-5 ">パン</button>
+<router-link v-bind:to="{name: 'game.two'}"> 
+<div><button class="button cancel mt-5 mb-5 vue_cancel">ごはん</button>
+</div>
+<div><button class="button mt-5 mb-5 ">パン</button>
+</div>
 </router-link>       
 </div>
 
@@ -31,13 +33,3 @@
     export default {}
 </script>
 
-
-<style scoped>
-.v-enter-active, .v-leave-active {
-  transition: opacity .5s
-}
-
-.v-enter, .v-leave-to {
-  opacity: 0
-}
-</style>

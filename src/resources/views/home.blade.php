@@ -43,7 +43,7 @@
         
 
         <div class="sentence mt-5 mb-5">
-            <a href="{{ url('/about') }}">もう少し詳しく聞きたい</a>
+            <a href="{{ url('/about') }}"  onclick="clickBtn3()">もう少し詳しく聞きたい</a>
         </div>
         
         <footer class="footer">2021 © m-wada</footer>

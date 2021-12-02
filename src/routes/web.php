@@ -37,14 +37,7 @@ Route::post('/check', "TextController@send")->name("form.send");
 
  
 // 偽HOME画面
-Route::get('/fake.home/{id}', 'TextController@detail');
+Route::get('/game.home/{id}', 'TextController@detail');
 
 // 結果画面
-Route::get('/fake.game/{id}', 'TextController@detailText');
-
-
-
-
-
-
-
+Route::get('/game.game/{id}', 'TextController@detailText');
