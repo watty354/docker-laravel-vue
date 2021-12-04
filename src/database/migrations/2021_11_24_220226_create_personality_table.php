@@ -20,25 +20,25 @@ class CreatePersonalityTable extends Migration
         });
 
         DB::table('personality')->insert(
-            ['sentence' => 'ストレスに過敏で不安や緊張が高く神経質。']
+            ['sentence' => 'あなたはストレスに過敏で不安や緊張が高く神経質で、目の前の相手の反応を上手にくみ取ることもできます。']
         );
         DB::table('personality')->insert(
 
-            ['sentence' => '興味関心が外の人や物に向けられている。積極性、社交性が高く陽気。']
+            ['sentence' => 'あなたは興味関心が外の人や物に向けられていて積極性、社交性が高く陽気な性格です']
 
         );
         DB::table('personality')->insert(
 
-            ['sentence' => '新しい経験に対してオープンで、好奇心が強く想像力が豊か。
-            走り出してから考えるタイプ']
+            ['sentence' => 'あなたは新しい経験に対してオープンで、好奇心が強く想像力が豊かであり、
+            走り出してから考えるタイプでしょう。']
         );
         DB::table('personality')->insert(
 
-            ['sentence' => '利己的でなく、他者のことを思いやれる。やさしく共感性が高い。']
+            ['sentence' => 'あなたは利己的でなく、他者のことを思いやれる。やさしく共感性が高いでしょう。']
         );
         DB::table('personality')->insert(
 
-            ['sentence' => '真面目で計画的。責任感があり勤勉で自己規律的。']
+            ['sentence' => 'あなたは真面目で計画的。責任感があり物事に一生懸命向き合う事ができます。']
         );
     }
     }

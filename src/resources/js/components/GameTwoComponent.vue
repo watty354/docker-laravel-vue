@@ -1,5 +1,4 @@
 <template>
-<transition>
 <div class="vue_row">
 
 <div class="sentence mt-5 mb-3 vue_sentence">
@@ -17,14 +16,17 @@
 
 
 <div>
-<router-link v-bind:to="{name: 'game.tree'}">   
+<router-link v-bind:to="{name: 'game.tree'}">
+<div>
 <button class="button cancel mt-5 mb-5 vue_cancel">おでん</button>
+</div> 
+<div>
 <button class="button mt-5 mb-5">きつねうどん</button>
+</div> 
 </router-link>       
 </div>
 
 </div>
-</transition>
 </template>
 
 <script>

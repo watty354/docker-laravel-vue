@@ -1,5 +1,4 @@
 <template>
-<transition>
 <div class="vue_row">
 
 <div class="sentence mt-5 mb-3 vue_sentence">
@@ -26,7 +25,6 @@
 </div>
 
 </div>
-</transition>
 </template>
 
 <script>

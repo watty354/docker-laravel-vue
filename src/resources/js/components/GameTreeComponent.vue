@@ -16,9 +16,13 @@
 
 
 <div>
-<router-link v-bind:to="{name: 'game.four'}">   
+<router-link v-bind:to="{name: 'game.four'}"> 
+<div>
 <button class="button cancel mt-5 mb-5 vue_cancel">頭痛</button>
+</div> 
+<div>
 <button class="button mt-5 mb-5 ">腹痛</button>
+</div> 
 </router-link>       
 </div>
 

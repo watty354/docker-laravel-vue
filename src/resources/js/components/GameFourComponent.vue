@@ -16,9 +16,13 @@
 
 
 <div>
-<router-link v-bind:to="{name: 'game.five'}">   
+<router-link v-bind:to="{name: 'game.five'}">  
+<div>
 <button class="button cancel mt-5 mb-5 vue_cancel">はい</button>
+</div> 
+<div>
 <button class="button mt-5 mb-5 ">いいえ</button>
+</div> 
 </router-link>       
 </div>
 

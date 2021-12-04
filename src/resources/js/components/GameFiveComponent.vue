@@ -15,9 +15,12 @@
 </div>
 </div>
 
-
+<div>
 <button class="button cancel mt-5 mb-5 vue_cancel" onclick="clickBtn2()">自分</button>
+</div> 
+<div>
 <button class="button mt-5 mb-5 " onclick="clickBtn2()">お金</button>     
+</div> 
 </div>
 
 </div>
