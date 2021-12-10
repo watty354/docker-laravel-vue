@@ -68,10 +68,14 @@
 </div>
 
 
-        </div>
-    </div>
+
+</div>
+</div>
 </div>
 
+<div class="sentence mt-5 mb-5">
+    <a href="{{ url('/about') }}"  onclick="clickBtn3()">もう一度説明を見る</a>
+</div>
 
 
 

@@ -1,4 +1,3 @@
-
   <!doctype html>
   <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -9,7 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
         <title>めちゃくちゃあたる性格診断</title>
-        
+        <meta name="description" content="最新のAIを駆使した質問であなたの驚性格を当てます。くほどめちゃくちゃあたります。">
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
         <link href="{{ mix('/sass/sample.css') }}" rel="stylesheet">
         <script src="{{ mix('js/all.js') }}" async></script>

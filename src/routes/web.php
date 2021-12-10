@@ -21,8 +21,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-  
-
 // 入力画面
 // Route::get('/input', "TextController@show")->name("form.show");
 Route::get('/input', "TextController@show")->name("form.show");

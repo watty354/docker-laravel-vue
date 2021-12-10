@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>偽性格診断</title>
+    <meta name="description" content="あなたが作成する相手の性格診断">
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('/sass/sample.css') }}" rel="stylesheet">
     <script src="{{ mix('js/all.js') }}" async></script>
